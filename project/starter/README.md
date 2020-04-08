@@ -18,6 +18,8 @@ A file named `set_env.sh` has been prepared as an optional tool to help you conf
 We do _not_ want your credentials to be stored in git. After pulling this `starter` project, run the following command to tell git to stop tracking the script in git but keep it stored locally. This way, you can use the script for your convenience and reduce risk of exposing your credentials.
 `git rm --cached set_env.sh`
 
+Afterwards, we can prevent the file from being included in your solution by adding the file to our `.gitignore` file.
+
 ### Database
 Create a PostgreSQL database either locally or on AWS RDS. Set the config values for environment variables prefixed with `POSTGRES_` in `set_env.sh`.
 
