@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: ___INSERT_AWS_BUCKET___
-  AWS_PROFILE: ___INSERT_AWS_PROFILE___
-  AWS_REGION: ___INSERT_AWS_REGION___
-  JWT_SECRET: ___INSERT_JWT_SECRET___
-  POSTGRES_DB: ___INSERT_POSTGRES_DB___
-  POSTGRES_HOST: ___INSERT_POSTGRES_HOST___
+  AWS_BUCKET: udagram-east-hatem-bucket
+  AWS_PROFILE: udagram-east-hatem-bucket
+  AWS_REGION: us-east-2
+  JWT_SECRET: udagramhatemdev
+  POSTGRES_DB: udagramhatemdev
+  POSTGRES_HOST: udagramhatemdev.cku43frwooce.us-east-2.rds.amazonaws.com
   URL: http://localhost:8100  
 metadata:
   name: env-config
