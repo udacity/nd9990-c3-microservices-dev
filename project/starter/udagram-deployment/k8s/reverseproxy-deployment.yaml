@@ -9,6 +9,7 @@ spec:
   selector:
   matchLabels: 
     name: reverseproxy
+    service: reverseproxy
   template:
     metadata:
       labels:
