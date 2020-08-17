@@ -8,7 +8,7 @@ spec:
   replicas: 3
   selector:
   matchLabels: 
-    service: backend-feed
+    name: backend-feed
   template:
     metadata:
       labels:
