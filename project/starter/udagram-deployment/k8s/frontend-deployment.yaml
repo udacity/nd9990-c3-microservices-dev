@@ -8,7 +8,8 @@ spec:
   replicas: 2
   selector:
   matchLabels: 
-    name: frontend
+    service: frontend
+    api: external        
   template:
     metadata:
       labels:
