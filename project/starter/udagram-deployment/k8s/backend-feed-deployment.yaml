@@ -7,8 +7,8 @@ metadata:
 spec:
   replicas: 3
   selector:
-  matchLabels: 
-    service: backend-feed
+    matchLabels: 
+      service: backend-feed
   template:
     metadata:
       labels:
