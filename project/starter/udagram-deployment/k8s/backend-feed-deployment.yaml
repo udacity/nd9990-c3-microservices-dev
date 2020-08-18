@@ -79,6 +79,6 @@ spec:
       volumes:
       - name: aws-secret
         secret:
-          secretName: aws-secret    
-nodeSelector:
-  disktype: ssd 
+          secretName: aws-secret       
+  nodeSelector:
+    disktype: ssd

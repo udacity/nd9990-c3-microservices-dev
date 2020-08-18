@@ -10,6 +10,7 @@ spec:
     matchLabels: 
       service: frontend
       api: external        
+
   template:
     metadata:
       labels:
@@ -28,8 +29,8 @@ spec:
             cpu: "250m"
           limits:
             memory: "1024Mi"
-            cpu: "500m"  
+            cpu: "500m"                
       restartPolicy: Always
-nodeSelector:
-  disktype: ssd 
+  nodeSelector:
+    disktype: ssd
 

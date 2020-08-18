@@ -28,7 +28,7 @@ spec:
         ports:
         - containerPort: 8080
       restartPolicy: Always
-nodeSelector:
-  disktype: ssd 
+  nodeSelector:
+    disktype: ssd
 
 

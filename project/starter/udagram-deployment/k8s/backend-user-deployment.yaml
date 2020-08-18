@@ -57,7 +57,7 @@ spec:
               name: env-secret
               key: POSTGRES_USERNAME
       restartPolicy: Always
-nodeSelector:
-  disktype: ssd 
+  nodeSelector:
+    disktype: ssd
 
 
