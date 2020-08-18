@@ -27,8 +27,8 @@ spec:
             cpu: "500m"  
         ports:
         - containerPort: 8080
-      nodeSelector:
-        disktype: ssd
       restartPolicy: Always
+nodeSelector:
+  disktype: ssd 
 
 
