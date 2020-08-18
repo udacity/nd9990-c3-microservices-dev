@@ -74,7 +74,9 @@ spec:
         volumeMounts:
         - name: aws-secret
           mountPath: "/root/.aws/"
-          readOnly: true        
+          readOnly: true
+      nodeSelector:
+        disktype: ssd
       restartPolicy: Always
       volumes:
       - name: aws-secret

@@ -28,6 +28,8 @@ spec:
             cpu: "250m"
           limits:
             memory: "1024Mi"
-            cpu: "500m"                
+            cpu: "500m"  
+      nodeSelector:
+        disktype: ssd 
       restartPolicy: Always
 

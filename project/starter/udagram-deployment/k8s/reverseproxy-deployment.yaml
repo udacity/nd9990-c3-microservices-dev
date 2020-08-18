@@ -24,9 +24,11 @@ spec:
             cpu: "250m"
           limits:
             memory: "1024Mi"
-            cpu: "500m"       
+            cpu: "500m"  
         ports:
         - containerPort: 8080
+      nodeSelector:
+        disktype: ssd
       restartPolicy: Always
 
 
