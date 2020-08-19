@@ -16,10 +16,10 @@ spec:
         api: external        
     spec:
       containers:
-      - image: udagram-frontend:local
+      - image: mohamedhatemkhalil/udagram-frontend:local
         name: frontend
         imagePullPolicy: Always          
-        ports:
+        ports: 
         - containerPort: 80
         resources:
           requests:
@@ -29,6 +29,4 @@ spec:
             memory: "1024Mi"
             cpu: "500m"                
       restartPolicy: Always
-  nodeSelector:
-    disktype: ssd
 

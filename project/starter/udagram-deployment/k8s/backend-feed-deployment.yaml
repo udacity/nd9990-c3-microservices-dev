@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: udagram-feed
+      - image: mohamedhatemkhalil/udagram-api-feed
         name: backend-feed
         imagePullPolicy: Always  
         resources:
@@ -80,5 +80,3 @@ spec:
       - name: aws-secret
         secret:
           secretName: aws-secret       
-  nodeSelector:
-    disktype: ssd

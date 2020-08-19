@@ -15,7 +15,7 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: udagram-api-user
+      - image: mohamedhatemkhalil/udagram-api-user
         name: backend-user 
         imagePullPolicy: Always  
         resources:
@@ -57,7 +57,5 @@ spec:
               name: env-secret
               key: POSTGRES_USERNAME
       restartPolicy: Always
-  nodeSelector:
-    disktype: ssd
 
 
