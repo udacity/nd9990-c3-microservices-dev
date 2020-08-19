@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 })
 export class FeedUploadButtonComponent implements OnInit, OnDestroy {
 
-  isLoggedIn: boolean;
+  isLoggedIn: Boolean;
   loginSub: Subscription;
 
   constructor(private modalController: ModalController, private auth: AuthService) { }

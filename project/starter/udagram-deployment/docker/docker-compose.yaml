@@ -1,0 +1,24 @@
+version: "3"
+services:
+  reverseproxy:
+      image: mohamedhatemkhalil/reverseproxy
+      ports:
+          - 8080:8080
+      restart: always
+      depends_on:
+        - backend-user
+        - backend-feed
+  backend-user:
+    image: mohamedhatemkhalil/udagram-api-user
+    env_file:
+          - development.env
+  backend-feed:
+    image: mohamedhatemkhalil/udagram-api-feed
+    volumes:
+      - $HOME/.aws:/root/.aws
+    env_file:
+      - development.env
+  frontend:
+    image: mohamedhatemkhalil/udagram-frontend:local
+    ports:
+      - "8100:80"
